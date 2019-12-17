@@ -17,6 +17,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{3FEB301F-0
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PisiCloud.FormulaTest", "test\PisiCloud.FormulaTest\PisiCloud.FormulaTest.csproj", "{488CD8F7-93F1-4ECE-B78E-5F4B8AA36EFC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pisi.CalculatorApi", "src\Pisi.CalculatorApi\Pisi.CalculatorApi.csproj", "{4094DEE4-79F9-4291-96DB-14E4C79FD376}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pisi.Calculator", "src\Pisi.Calculator\Pisi.Calculator.csproj", "{2F2B8BF7-3A51-49EF-AA8C-010DCBA62442}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -43,6 +47,14 @@ Global
 		{488CD8F7-93F1-4ECE-B78E-5F4B8AA36EFC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{488CD8F7-93F1-4ECE-B78E-5F4B8AA36EFC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{488CD8F7-93F1-4ECE-B78E-5F4B8AA36EFC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4094DEE4-79F9-4291-96DB-14E4C79FD376}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4094DEE4-79F9-4291-96DB-14E4C79FD376}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4094DEE4-79F9-4291-96DB-14E4C79FD376}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4094DEE4-79F9-4291-96DB-14E4C79FD376}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2F2B8BF7-3A51-49EF-AA8C-010DCBA62442}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2F2B8BF7-3A51-49EF-AA8C-010DCBA62442}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2F2B8BF7-3A51-49EF-AA8C-010DCBA62442}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2F2B8BF7-3A51-49EF-AA8C-010DCBA62442}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -53,6 +65,8 @@ Global
 		{CDE1E088-5BD6-4FFE-93EF-3C4EB9A03EE3} = {F839E5B9-45D2-4B3B-A41A-F6CDDF3A43B3}
 		{D81337A1-7377-4362-9ED7-9E6535C48E6B} = {3FEB301F-0303-45FE-A49B-29D5E12BEF4D}
 		{488CD8F7-93F1-4ECE-B78E-5F4B8AA36EFC} = {3FEB301F-0303-45FE-A49B-29D5E12BEF4D}
+		{4094DEE4-79F9-4291-96DB-14E4C79FD376} = {F839E5B9-45D2-4B3B-A41A-F6CDDF3A43B3}
+		{2F2B8BF7-3A51-49EF-AA8C-010DCBA62442} = {F839E5B9-45D2-4B3B-A41A-F6CDDF3A43B3}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {EBE77888-E54F-48D5-AF1B-EA2F8176A227}
