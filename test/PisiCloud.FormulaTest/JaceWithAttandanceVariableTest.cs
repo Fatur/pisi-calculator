@@ -82,5 +82,6 @@ namespace PisiCloud.FormulaTest
             var statementAttFalse = "iif(Regular==1 && Remark==AL,1,2)";
             Assert.AreEqual(2, calc.Calculate(statementAttFalse, attandance));
         }
+        
     }
 }

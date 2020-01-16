@@ -27,7 +27,13 @@ namespace PisiCloud.FormulaTest
         public void Should_init_calculation_enggine()
         {
             Assert.AreEqual(7, calc.Calculate("2+5"));
-            Assert.AreEqual(2, calc.Calculate("if(2==2,2,3)"));
+            Assert.AreEqual(2, calc.Calculate("if(2=2,2,3)"));
+        }
+        [TestMethod]
+        public void Should_change_constant_true_with_1_and_false_with_0()
+        {
+            Assert.AreEqual(2, calc.Calculate("if(1=True,2,3)"));
+            Assert.AreEqual(3, calc.Calculate("if(1=false,2,3)"));
         }
     }
 }

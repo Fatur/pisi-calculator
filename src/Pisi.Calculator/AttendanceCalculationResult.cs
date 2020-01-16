@@ -8,5 +8,6 @@ namespace Pisi.Calculator
     {
         public double OT { get; set; }
         public double OT1 { get; set; }
+        public double AbsentDay { get; set; }
     }
 }

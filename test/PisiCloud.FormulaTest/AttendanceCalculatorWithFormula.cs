@@ -20,7 +20,7 @@ namespace PisiCloud.FormulaTest
         public void Should_load_attandance_load_formulas()
         {
             var attData = new AttendanceData { Regular = 1, Remark = 2 };
-            var attFormula = new AttendanceFormula { OT = "iif(Regular==2,1,2)", OT1 = "iif(Regular==1 && Remark==2,1,2)" };
+            var attFormula = new AttendanceFormula { OT = "iif(Regular=2,1,2)", OT1 = "iif(Regular=1 && Remark=2,1,2)" };
             AttendanceCalculationResult result = calc.Calculate(attFormula, attData);
             Assert.AreEqual(2, result.OT);
             Assert.AreEqual(1, result.OT1);

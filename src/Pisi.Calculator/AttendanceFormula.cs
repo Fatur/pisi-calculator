@@ -6,7 +6,8 @@ namespace Pisi.Calculator
 {
     public class AttendanceFormula
     {
-        public string OT { get; set; }
-        public string OT1 { get; set; }
+        public string OT { get; set; } = "0";
+        public string OT1 { get; set; } = "0";
+        public string AbsentDay { get; set; } = "0";
     }
 }
