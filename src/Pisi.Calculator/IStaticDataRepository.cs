@@ -1,11 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Threading.Tasks;
 
 namespace Pisi.Calculator
 {
     public interface IStaticDataRepository
     {
-        IList<Remark> LoadRemark();
+        Task<IList<Remark>> LoadRemarkAsync();
     }
 }

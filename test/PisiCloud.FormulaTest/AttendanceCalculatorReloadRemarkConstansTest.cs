@@ -13,7 +13,7 @@ namespace PisiCloud.FormulaTest
     {
         private AttendanceCalculator calc;
         [TestInitialize]
-        public void Init()
+        public async System.Threading.Tasks.Task InitAsync()
         {
             var staticDataMock = new Mock<IStaticDataRepository>();
             var listOfRemark = new List<Remark>()
@@ -21,9 +21,9 @@ namespace PisiCloud.FormulaTest
                 new Remark(1,"ABSs"),
                 new Remark(2,"AL")
             };
-            staticDataMock.Setup(m => m.LoadRemark()).Returns(listOfRemark);
+            staticDataMock.Setup(m => m.LoadRemarkAsync()).ReturnsAsync(listOfRemark);
             calc = new AttendanceCalculator();
-            calc.LoadCompanyStaticDataAsConstant(staticDataMock.Object);
+            await calc.LoadCompanyStaticDataAsConstantAsync(staticDataMock.Object);
         }
 
         

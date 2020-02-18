@@ -9,5 +9,7 @@ namespace Pisi.Calculator
         public int Regular { get; set; }
         public int Remark { get; set; }
         public string Classification { get; set; }
+        public DateTime DateIn { get; set; }
+        public DateTime DateOut { get; set; }
     }
 }

@@ -17,9 +17,15 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{3FEB301F-0
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PisiCloud.FormulaTest", "test\PisiCloud.FormulaTest\PisiCloud.FormulaTest.csproj", "{488CD8F7-93F1-4ECE-B78E-5F4B8AA36EFC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pisi.CalculatorApi", "src\Pisi.CalculatorApi\Pisi.CalculatorApi.csproj", "{4094DEE4-79F9-4291-96DB-14E4C79FD376}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Pisi.CalculatorApi", "src\Pisi.CalculatorApi\Pisi.CalculatorApi.csproj", "{4094DEE4-79F9-4291-96DB-14E4C79FD376}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pisi.Calculator", "src\Pisi.Calculator\Pisi.Calculator.csproj", "{2F2B8BF7-3A51-49EF-AA8C-010DCBA62442}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Pisi.Calculator", "src\Pisi.Calculator\Pisi.Calculator.csproj", "{2F2B8BF7-3A51-49EF-AA8C-010DCBA62442}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Pisi.AttandanceCalculator.IntegrationTest", "test\Pisi.AttandanceCalculator.IntegrationTest\Pisi.AttandanceCalculator.IntegrationTest.csproj", "{6B5DF46B-5243-4BD6-A527-792DD6D8226E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Pisi.CalculatorRepository", "src\Pisi.CalculatorRepository\Pisi.CalculatorRepository.csproj", "{C5E36D36-F236-4524-BC8B-DA825ECF98E4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pisi.AttendanceCalculator.RepositoryTest", "test\Pisi.AttendanceCalculator.RepositoryTest\Pisi.AttendanceCalculator.RepositoryTest.csproj", "{058DBF35-821D-47E2-9C2B-F54240BB8BA8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -55,6 +61,18 @@ Global
 		{2F2B8BF7-3A51-49EF-AA8C-010DCBA62442}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2F2B8BF7-3A51-49EF-AA8C-010DCBA62442}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2F2B8BF7-3A51-49EF-AA8C-010DCBA62442}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6B5DF46B-5243-4BD6-A527-792DD6D8226E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6B5DF46B-5243-4BD6-A527-792DD6D8226E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6B5DF46B-5243-4BD6-A527-792DD6D8226E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6B5DF46B-5243-4BD6-A527-792DD6D8226E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C5E36D36-F236-4524-BC8B-DA825ECF98E4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C5E36D36-F236-4524-BC8B-DA825ECF98E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C5E36D36-F236-4524-BC8B-DA825ECF98E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C5E36D36-F236-4524-BC8B-DA825ECF98E4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{058DBF35-821D-47E2-9C2B-F54240BB8BA8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{058DBF35-821D-47E2-9C2B-F54240BB8BA8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{058DBF35-821D-47E2-9C2B-F54240BB8BA8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{058DBF35-821D-47E2-9C2B-F54240BB8BA8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -67,6 +85,9 @@ Global
 		{488CD8F7-93F1-4ECE-B78E-5F4B8AA36EFC} = {3FEB301F-0303-45FE-A49B-29D5E12BEF4D}
 		{4094DEE4-79F9-4291-96DB-14E4C79FD376} = {F839E5B9-45D2-4B3B-A41A-F6CDDF3A43B3}
 		{2F2B8BF7-3A51-49EF-AA8C-010DCBA62442} = {F839E5B9-45D2-4B3B-A41A-F6CDDF3A43B3}
+		{6B5DF46B-5243-4BD6-A527-792DD6D8226E} = {3FEB301F-0303-45FE-A49B-29D5E12BEF4D}
+		{C5E36D36-F236-4524-BC8B-DA825ECF98E4} = {F839E5B9-45D2-4B3B-A41A-F6CDDF3A43B3}
+		{058DBF35-821D-47E2-9C2B-F54240BB8BA8} = {3FEB301F-0303-45FE-A49B-29D5E12BEF4D}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {EBE77888-E54F-48D5-AF1B-EA2F8176A227}

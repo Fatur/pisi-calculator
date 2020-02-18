@@ -4,6 +4,8 @@ using Pisi.Calculator;
 using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Threading.Tasks;
+
 namespace PisiCloud.FormulaTest
 {
     [TestClass]
@@ -13,7 +15,7 @@ namespace PisiCloud.FormulaTest
         private string mAbsenDayFormula = "iif((Regular=True AND Remark='ABSS') Or (Regular=True AND Remark='UPLl'),1,iif(Regular=True AND Remark='UP05',0.5,0))";
         //private string mAbsenDayFormula = "iif((Regular=True && Remark=1) || (Regular=2 && Remark=1),1,iif((Regular=1 && Remark=2) || (Regular=2 && Remark=1),1,2))";
         [TestInitialize]
-        public void Init()
+        public async Task InitAsync()
         {
             var staticDataMock = new Mock<IStaticDataRepository>();
             var listOfRemark = new List<Remark>()
@@ -22,9 +24,9 @@ namespace PisiCloud.FormulaTest
                 new Remark(2,"UPLL"),
                 new Remark(3,"UP05")
             };
-            staticDataMock.Setup(m => m.LoadRemark()).Returns(listOfRemark);
+            staticDataMock.Setup(m => m.LoadRemarkAsync()).ReturnsAsync(listOfRemark);
             calc = new AttendanceCalculator();
-            calc.LoadCompanyStaticDataAsConstant(staticDataMock.Object);
+            await calc.LoadCompanyStaticDataAsConstantAsync(staticDataMock.Object);
         }
 
         [TestMethod]

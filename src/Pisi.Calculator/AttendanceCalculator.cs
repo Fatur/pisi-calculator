@@ -1,6 +1,7 @@
 ﻿using Jace;
 using System;
 using System.Collections.Generic;
+using System.Threading.Tasks;
 
 namespace Pisi.Calculator
 {
@@ -26,9 +27,9 @@ namespace Pisi.Calculator
             return mcalcEnggine.Calculate(statement.TransformToJaceFormat());
         }
 
-        public void LoadCompanyStaticDataAsConstant(IStaticDataRepository staticDataRepo)
+        public async Task LoadCompanyStaticDataAsConstantAsync(IStaticDataRepository staticDataRepo)
         {
-            var remarks = staticDataRepo.LoadRemark();
+            var remarks = await staticDataRepo.LoadRemarkAsync();
             foreach (Remark remark in remarks)
             {
                 mcalcEnggine.AddConstant(remark.Code,remark.Value);

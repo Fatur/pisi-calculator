@@ -34,7 +34,6 @@ namespace Pisi.CalculatorApi
             {
                 app.UseDeveloperExceptionPage();
             }
-
             app.UseMvc();
         }
     }
