@@ -11,6 +11,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Pisi.CalculatorRepository\Pisi.CalculatorRepository.csproj" />
     <ProjectReference Include="..\Pisi.Calculator\Pisi.Calculator.csproj" />
   </ItemGroup>
 
